@@ -31,7 +31,8 @@
       "stylelint --fix",
       "prettier --write",
       "git add"
-    ]
+    ],
+    "**/*.tsx": "eslint --ext .tsx"
   },
   "author": "",
   "license": "ISC",
