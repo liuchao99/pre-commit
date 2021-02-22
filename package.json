@@ -8,13 +8,13 @@
     "start": "cross-env ENV_LWD=development webpack serve  --mode=development --config script/webpack.config.js",
     "build": "cross-env ENV_LWD=production webpack --mode=production --config script/webpack.config.js",
     "lint:tsx": "eslint --ext .tsx src && eslint --ext .ts src",
-    "lint:css": "stylelint --aei .less .css src",
+    "lint:scss": "stylelint --aei .less .css .scss src",
     "precommit": "lint-staged",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-staged"
+      "pre-commit": "npm run precommit && npm run lint:tsx && npm run lint:scss"
     }
   },
   "pre-commit": [
