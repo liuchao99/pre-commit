@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-use-before-define
-import React, { Component } from 'react';
-import { observer, inject } from 'mobx-react';
-import { DatePicker } from 'antd';
-import 'antd/dist/antd.less';
+import React, { Component } from "react";
+import { observer, inject } from "mobx-react";
+import { DatePicker } from "antd";
+import "antd/dist/antd.less";
 
-import './app.scss';
+import "./app.scss";
 
 let a = 100;
 // @inject("store")
@@ -18,7 +18,7 @@ class App extends Component {
       <div>
         <div className="app">
           {/* {this.props.store.count} */}
-          liuchao1
+          liuchao
         </div>
         <div>
           <DatePicker />
