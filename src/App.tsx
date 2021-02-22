@@ -10,8 +10,8 @@ let a = 100;
 // @inject("store")
 // @observer
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
   render() {
     return (
